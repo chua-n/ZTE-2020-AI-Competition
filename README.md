@@ -87,7 +87,7 @@ PyTorch 的 API 直接就有 nn.Transformer, 再搜一下 transformer 的代码�
 
 ## 6. embedding
 
-好吧, 死前再扑腾一下. 这几个 seq2seq 的模型里总是提到一个 embedding layer, 本质似乎就是一种向量空间转换, 关键的是它竟然是可学习的, 好赖加一个 `nn.Embedding` 层试一下算逑. 捣腾了 PyTorch 的相关 API, 终于在 RNN 层前、输入层后成功插入了一个 embedding 层. 有意栽花花不开, 无心插柳柳成荫, embedding 后效果好得嗷嗷叫, 训练集终于过拟合了, 准确率达到 98%, 说明模型学习能力总算提上来了, 目前的任务是提高泛化能力.
+好吧, 死前再扑腾一下. 这几个 seq2seq 的模型里总是提到一个 embedding layer, 本质似乎就是一种向量空间转换, 关键的是它竟然是可学习的, 好赖加一个 `nn.Embedding` 尝试一下算逑. 捣腾了 PyTorch 的相关 API, 终于在 RNN 层前、输入层后成功插入了一个 embedding 层. 有意栽花花不开, 无心插柳柳成荫, embedding 后效果好得嗷嗷叫, 训练集终于过拟合了, 准确率达到 98%, 说明模型学习能力总算提上来了, 目前的任务是提高泛化能力.
 
 > 你的排名为第 122，分值为 83.917
 
